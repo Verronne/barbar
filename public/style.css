@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
-}
+ }
+
 body {
     margin:0px;
     color: black;
@@ -10,11 +11,24 @@ body {
 .header {
     text-align: center;
     padding: 100px;
+    @media only screen and (max-width: 600px){
+        padding: 10px;
+        
+    }
+    
     background-image: url('https://e1.pxfuel.com/desktop-wallpaper/972/324/desktop-wallpaper-fond-d-ecran-abstrait-noir-et-blanc-blanc-noir.jpg');
     border-bottom: 10px white;
     background-size: cover;
 }
-.exemple {
+.menunav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+}
+.navigation {
     width: 120px;
     height: 35px;
     background-color: rgb(0, 0, 0);
@@ -26,27 +40,25 @@ body {
     padding: 7px;
     font-family: Arial;
     color: #e0e0e0;
-    box-shadow: 2px 2px;
+}
+.navigation:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: #e0e0e0;
+    transition: 0.8s;
+    color: #010101;
 }
 a {
     text-decoration: none;
     color: black;
 }
-.menubox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    border: 2px solid #e0e0e0;
-    padding: 20px;
-    border-radius: 8px;
-}
+
 .headercv {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(38, 38, 38);
     width: auto;
-    height: 75px;
+    height: auto;
     color: white;
     font-family: Arial;
-    margin-top: -18px;
+    padding: 8px;
     text-align: center;
 }
 .container {
@@ -56,18 +68,15 @@ a {
 .colonnegauche {
     background-color: rgb(120, 120, 120);
     color: white;
-    width: 500px;
+    width: 250px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .enfant2 {
     background-color: rgb(224, 224, 224);
     display: flex;
-    width: 200px;
-}
-.enfant3 {
-    background-color: #e0e0e0;
-    display: flex;
+    width: 300px;
+    padding: 10px;
 }
 .footer {
     background-color: #010101;
@@ -76,4 +85,18 @@ a {
     height: 100px;
     margin-top: -16px;
     text-align: center;
+}
+
+.separation {
+    width: 200px;
+    height: 5px;
+    margin: 20px auto;
+    display: flex;
+    background-color: #e0e0e0;
+    border-radius: 0px 5px 0px 5px;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: row;
 }
