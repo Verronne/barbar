@@ -5,91 +5,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>SiteJulienMuzard</title>
 </head>
 
 <body>
     <!-- Header repositionnement ? -->
     <div class="header">
-        <div class="menunav">
+        <div class="headercv">
+            <h1>Julien MUZARD</h1>
+            <h2>Stagiaire en Développement Web et Web Mobile</h2>
+        </div>
+        <div class="menubox">
             <a href="index.html">
-                <div class="navigation">CV</div>
+                <div class="exemple">CV</div>
             </a>
-            <a href="Labo.html">
-                <div class="navigation">Labo</div>
+            <!-- Menu Déroulant-->
+            <ul id="menu-accordeon">
+                <li><a href="#">Lien menu 1</a>
+                   <ul>
+                      <li><a href="#">lien sous menu 1</a></li>
+                      <li><a href="#">lien sous menu 1</a></li>
+                      <li><a href="#">lien sous menu 1</a></li>
+                      <li><a href="#">lien sous menu 1</a></li>
+                   </ul>
+                </li>
+                 <li><a href="#">Lien menu 2</a>
+                   <ul>
+                      <li><a href="#">Lien sous menu 2</a></li>
+                      <li><a href="#">Lien sous menu 2</a></li>
+                      <li><a href="#">Lien sous menu 2</a></li>
+                      <li><a href="#">Lien sous menu 2</a></li>
+                   </ul>
+                </li>
+                <li><a href="#">Lien menu 3</a>
+                   <ul>
+                      <li><a href="#">Lien sous menu 3</a></li>
+                      <li><a href="#">Lien sous menu 3</a></li>
+                      <li><a href="#">Lien sous menu 3</a></li>
+                      <li><a href="#">Lien sous menu 3</a></li>
+                   </ul>
+                </li>
+             </ul>
+             <!-- fin menu déroulant-->
+            <a href="./labo.html">
+                <div class="exemple">Labo</div>
             </a>
             <a href="Application.html">
-                <div class="navigation">Application</div>
+                <div class="exemple">Application</div>
             </a>
         </div>
     </div>
     <div>
-        <div class="headercv">
-            <h2>Julien Muzard</h2>
-            <h3>Stagiaire en Développement Web et Web Mobile</h3>
-        </div>
+        
     </div>
 
 </body>
-<div class="maincontainer">
-    <div class="fractiongauche">
-        <!-- Informations personnelles de CV-->
-        <div class="colonnegauche">
-            <p><b>Informations personnelles</b></p>
-            <span class="separation"></span>
-            <p>37ans</p>
-            <p>Permis B et véhiculé</p>
-            <img src="./Imagesiteweb/adresse.png" alt="https://ibb.co/pWqpGjQ">
-            <p>22 rue F Shalck de la faverie</p>
-            <p>61700 Domfront en Poiraie</p>
-            <img src="./Imagesiteweb/telephone-intelligent.png" alt="https://ibb.co/Sfq7tBf">
-            <p>06.45.13.05.60</p>
-            <img src="./Imagesiteweb/courrier.png" alt="https://ibb.co/fXrP3Nk">
-            <p>muzardjulien1986@gmail.com</p>
-            <p><b>Compétences</b></p>
-            <span class="separation"></span>
-            <p>HTML/CSS</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
-            <p>Pack Office</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
-            <p><b>Langues</b></p>
-            <span class="separation"></span>
-            <p>Français (langue maternelle)</p>
-            <p>Anglais</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
-                src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
-            <p><b>Centres d'intérêts</b></p>
-            <span class="separation"></span>
-            <p>Famille et Amis</p>
-            <p>Informatique</p>
-            <p>Cinéma</p>
+<div class="container">
+    <!-- Informations personnelles de CV-->
+    <div class="colonnegauche">
+        <p><b>Informations personnelles</b></p>
+        <hr>
+        <p>37ans</p>
+        <p>Permis B et véhiculé</p>
+        <div class="maps"><img src="./Imagesiteweb/adresse.png" alt="https://ibb.co/pWqpGjQ" class="maps" id="maps"></div>
+        <p>22 rue F Shalck de la faverie</p>
+        <p>61700 Domfront en Poiraie</p>
+        <div class="telephone"><img src="./Imagesiteweb/telephone-intelligent.png" alt="https://ibb.co/Sfq7tBf" class="telephone" id="telephone"></div>
+        <p>06.45.13.05.60</p>
+        <div class="adressemail"><img src="./Imagesiteweb/courrier.png" alt="https://ibb.co/fXrP3Nk" class="adressemail" id="adressemail"></div>
+        <p><b>Compétences</b></p>
+        <hr>
+        <p>HTML/CSS</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
+            src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img src="./Imagesiteweb/point blanc.png"
+            alt="https://ibb.co/C6W9KQg"> <img src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
+            src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
+        <p>Pack Office</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
+            src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img src="./Imagesiteweb/point noir.png"
+            alt="https://ibb.co/tJD0KN3"> <img src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
+            src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
+        <p><b>Langues</b></p>
+        <hr>
+        <p>Français (langue maternelle)</p>
+        <p>Anglais</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
+            src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img src="./Imagesiteweb/point blanc.png"
+            alt="https://ibb.co/C6W9KQg"> <img src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg"> <img
+            src="./Imagesiteweb/point blanc.png" alt="https://ibb.co/C6W9KQg">
+        <p><b>Centres d'intérêts</b></p>
+        <hr>
+        <p>Famille et Amis</p>
+        <p>Informatique</p>
+        <p>Cinéma</p>
+    </div>
+    <!-- CV -->
+    <div class="curiculum">
+        <h4>JE ME PRÉSENTE...</h4>
+        <hr class="separationcuriculum">
+        <p>Actuellement en formation de développement web full stack, je suis
+            motivé et curieux, je sais faire preuve de bon sens et de logique.
+            Les gens m'apprécie pour le respect que je leurs témoigne.
+            Je suis organisé, méticuleux, ponctuel et sociable.
+        </p>
+        <h4>FORMATIONS</h4>
+        <hr class="separationcuriculum">
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>18/09/23 à aujourdhui</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>Développeur Web et Web Mobile full stack en
+                        formation à Via Formation (Alençon-61)</b>
+                </p>
+                <p>apprentissage de la Conception et du développement de
+                    sites web</p>
+            </div>
         </div>
-        <!-- CV -->
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>06/2004</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>CAP Pâtissier</b></p>
+                <p>Obtention du CAP pâtissier, glacier, confiseur,
+                    chocolatier.
+                </p>
+            </div>
+        </div>
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>06-2018</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>Titre professionnel de Mécanicien de Maintenance
+                        Automobile
+                    </b>
+                </p>
+            </div>
+        </div>
+        <h4>EXPÉRIENCES PROFESSIONNELLES</h4>
+        <hr class="separationcuriculum">
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>09/2021 10/2021</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>Téléconseillé WebHelp (Étrelles-35)</b></p>
+                <p>Appels et conseils sur les solutions énergétique
+                </p>
+            </div>
+        </div>
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>04/2019 07/2019</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>Régleur ROVAL (FLERS-61)</b></p>
+                <p>Réglage et mise en fonction des lignes de
+                    conditionnement
+                </p>
+            </div>
+        </div>
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>11/2017 06/2018</h4>
+            </div>
+            <div class="bloctext2">
+                <p><b>Stagiaire Mécanicien de Maintenance Automobile (MMA) au centre AFPA de (LOUDÉAC-22)
+                    </b></p>
+            </div>
+        </div>
+        <div class="separationhorizontale">
+            <div class="bloctext">
+                <h4>09/2002 à 09/2014</h4>
+            </div>
+            <div class="bloctext2">
+                <p>Agent de fabrication "PANAVI" (35).
 
+                </p>
+                <p>Pâtissier à l'hôtel restaurant "LA RÔTISSERIE" (50).
+                </p>
+                <p>Boulanger à "LE FOUR A BOIS" (50).
+                </p>
+                <p>Pâtissier à "LEPANETIER" (50).
+                </p>
+                <p>Apprenti pâtissier à "L'AMANDINE" et "Délice Fertois" (91)
+                </p>
+            </div>
+        </div>
+    </div>
 
-    </div>
-    <div class="enfant2">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam repudiandae ducimus asperiores
-            dignissimos
-            quo exercitationem amet voluptas reiciendis totam ullam tempore rem necessitatibus, dolorum quasi fuga.
-            Veniam harum asperiores architecto.</p>
-    </div>
 </div>
+
 <footer>
     <div class="footer">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam repudiandae ducimus asperiores
-            dignissimos
-            quo exercitationem amet voluptas reiciendis totam ullam tempore rem necessitatibus, dolorum quasi fuga.
-            Veniam harum asperiores architecto.</p>
+     <div class="linkedin"><img src="./Imagesiteweb/logo-linkedin.png" alt="" class="image" id="linkedin"></div>
     </div>
+    <script src="stylejs.js"></script>
 </footer>
 
 </html>

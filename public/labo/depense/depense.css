@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333333;
+    @media only screen and (max-width: 600px) {
+        padding: 10px;
+        
+        
+       
+}}
+.flex {
+    display: flex;
+}
+
+.gaindepense {
+    text-align: center;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    width: 750px;
+    margin: 10px;
+    color: #e1e1e1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+
+}
+.saisiGlobal1 {
+
+    border: solid 2px #e1e1e1;
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.gainText {
+    background-color: #b7b7b7;
+    border-radius: 5px;
+    width: 200px;
+}
+.gainMontant {
+    background-color: #b7b7b7;
+    border-radius: 5px;
+    width: 200px;
+}
+.depenseText {
+    background-color: #b7b7b7;
+    border-radius: 5px;
+    width: 200px;
+}
+.depenseMontant {
+    background-color: #b7b7b7;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.listing {
+    border: solid 2px #e1e1e1;
+    margin: 5px;
+    height: 300px;
+    border-radius: 5px;
+    overflow-y: scroll;
+}
+.total {
+border: solid 2px #e1e1e1;
+margin: 5px;
+border-radius: 5px;
+
+}
+
+.grandT {
+    border: solid 2px #e1e1e1;
+    margin: 9px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #e1e1e1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.grandTotal {
+    border: solid 2px #e1e1e1;
+    margin: 9px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.boutonOK {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.ligneDeGain {
+    border: solid 2px #e1e1e1;
+    color: #e1e1e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+
+}
+
+.poubelle {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
