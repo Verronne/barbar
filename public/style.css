@@ -23,7 +23,7 @@ body {
 
 .exemple {
     width: 100px;
-    height: 35px;
+    height: 40px;
     background-color: rgb(0, 0, 0);
     color: white;
     border: 1px solid #e0e0e0;
@@ -33,7 +33,9 @@ body {
     padding: 7px;
     font-family: Arial;
     color: #e0e0e0;
-    margin: 8px;
+    margin-left:55px;
+    margin-right: 55px;
+
 
 }
 
@@ -149,62 +151,65 @@ hr {
 .adressemail {
     cursor: pointer;
 }
-/*##################--Menu déroulant--##################*/
 
-#menu-accordeon {
-    padding:0;
-    margin:0;
-    list-style:none;
-    text-align: center;
-    width: 180px;
+  ol, ul {
+    list-style: none;
   }
-  #menu-accordeon ul {
-    padding:0;
-    margin:0;
-    list-style:none;
-    text-align: center;
+  
+  .menu-label, .menu-cb {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    appearance: none;
+    z-index: 5;
   }
-  #menu-accordeon li {
-     background-color:#729EBF; 
-     background-image:-webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-     background-image: linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
-     border-radius: 6px;
-     margin-bottom:2px;
-     box-shadow: 3px 3px 3px #999;
-     border:solid 1px #333A40
+
+  .menu-nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3b3b3b;
+    height: 70%;
+    max-height: 400px;
+    width: 80%;
+    max-width: 300px;
+    border-radius: 0px 0px 10px 0px ;
+    border-right: solid 2px black;
+    border-bottom:solid 2px black;
+    box-shadow: #e1e1e1 2px 2px 2px 2px;
+    padding-top: 70px;
+    color: white;
+    z-index: 4;
+    transform:translate(-105%);
+    transition: transform 0.5s linear;
+    
+
+
   }
-  #menu-accordeon li li {
-     max-height:0;
-     overflow: hidden;
-     transition: all .5s;
-     border-radius:0;
-     background: #444;
-     box-shadow: none;
-     border:none;
-     margin:0
+  .menu-lien {
+color: #e1e1e1;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
   }
-  #menu-accordeon a {
-    display:block;
-    text-decoration: none;
-    color: #fff;
-    padding: 8px 0;
-    font-family: verdana;
-    font-size:1.2em
+  .menu-item {
+    padding: 0.7em;
+    color: #e1e1e1;
   }
-  #menu-accordeon ul li a, #menu-accordeon li:hover li a {
-    font-size:1em
+  .menu-cb:checked ~ .menu-nav {
+    transform: translate(0%);
   }
-  #menu-accordeon li:hover {
-     background: #729EBF
+
+  .menu-cote {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
-  #menu-accordeon li li:hover {
-     background: #999;
-  }
-  #menu-accordeon ul li:last-child {
-     border-radius: 0 0 6px 6px;
-     border:none;
-  }
-  #menu-accordeon li:hover li {
-    max-height: 15em;
-  }
-  /*##################--fin menu déroulant--######################*/

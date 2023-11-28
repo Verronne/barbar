@@ -8,55 +8,56 @@
     <title>SiteJulienMuzard</title>
 </head>
 
-<body>
+<body class="clickAilleurs">
     <!-- Header repositionnement ? -->
     <div class="header">
         <div class="headercv">
             <h1>Julien MUZARD</h1>
             <h2>Stagiaire en Développement Web et Web Mobile</h2>
         </div>
-        <div class="menubox">
-            <a href="index.html">
-                <div class="exemple">CV</div>
-            </a>
-            <!-- Menu Déroulant-->
-            <ul id="menu-accordeon">
-                <li><a href="#">Lien menu 1</a>
-                   <ul>
-                      <li><a href="#">lien sous menu 1</a></li>
-                      <li><a href="#">lien sous menu 1</a></li>
-                      <li><a href="#">lien sous menu 1</a></li>
-                      <li><a href="#">lien sous menu 1</a></li>
-                   </ul>
+        <label for="menu-cb" class="menu-label"><svg  viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0" />
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+                <g id="SVGRepo_iconCarrier">
+                    <g clip-path="url(#clip0_429_11066)">
+                        <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#e1e1e1" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_429_11066">
+                            <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)" />
+                        </clipPath>
+                    </defs>
+                </g>
+            </svg></label>
+        <input id="menu-cb" type="checkbox" class="menu-cb">
+        <nav class="menu-nav">
+            <ul>
+                <li class="menu-item">
+                    <a href="./labo/arborescence/arborescence.html" class="menu-lien">Arborescence</a>
                 </li>
-                 <li><a href="#">Lien menu 2</a>
-                   <ul>
-                      <li><a href="#">Lien sous menu 2</a></li>
-                      <li><a href="#">Lien sous menu 2</a></li>
-                      <li><a href="#">Lien sous menu 2</a></li>
-                      <li><a href="#">Lien sous menu 2</a></li>
-                   </ul>
+                <li class="menu-item">
+                    <a href="./labo/barbar/barbar.html" class="menu-lien">Barbar</a>
                 </li>
-                <li><a href="#">Lien menu 3</a>
-                   <ul>
-                      <li><a href="#">Lien sous menu 3</a></li>
-                      <li><a href="#">Lien sous menu 3</a></li>
-                      <li><a href="#">Lien sous menu 3</a></li>
-                      <li><a href="#">Lien sous menu 3</a></li>
-                   </ul>
+                <li class="menu-item">
+                    <a href="./labo/calculatrice/calculatrice.html" class="menu-lien">Calculatrice</a>
                 </li>
-             </ul>
-             <!-- fin menu déroulant-->
-            <a href="./labo.html">
-                <div class="exemple">Labo</div>
-            </a>
-            <a href="Application.html">
-                <div class="exemple">Application</div>
-            </a>
-        </div>
+                <li class="menu-item">
+                    <a href="./labo/depense/depense.html" class="menu-lien">Budget</a>
+                </li>
+                <li class="menu-item">
+                    <a href="./labo/todolist/index.html" class="menu-lien">To do list</a>
+                </li>
+
+
+            </ul>
+
+        </nav>
+        
     </div>
     <div>
-        
+
     </div>
 
 </body>
@@ -67,12 +68,15 @@
         <hr>
         <p>37ans</p>
         <p>Permis B et véhiculé</p>
-        <div class="maps"><img src="./Imagesiteweb/adresse.png" alt="https://ibb.co/pWqpGjQ" class="maps" id="maps"></div>
+        <div class="maps"><img src="./Imagesiteweb/adresse.png" alt="https://ibb.co/pWqpGjQ" class="maps" id="maps">
+        </div>
         <p>22 rue F Shalck de la faverie</p>
         <p>61700 Domfront en Poiraie</p>
-        <div class="telephone"><img src="./Imagesiteweb/telephone-intelligent.png" alt="https://ibb.co/Sfq7tBf" class="telephone" id="telephone"></div>
+        <div class="telephone"><img src="./Imagesiteweb/telephone-intelligent.png" alt="https://ibb.co/Sfq7tBf"
+                class="telephone" id="telephone"></div>
         <p>06.45.13.05.60</p>
-        <div class="adressemail"><img src="./Imagesiteweb/courrier.png" alt="https://ibb.co/fXrP3Nk" class="adressemail" id="adressemail"></div>
+        <div class="adressemail"><img src="./Imagesiteweb/courrier.png" alt="https://ibb.co/fXrP3Nk" class="adressemail"
+                id="adressemail"></div>
         <p><b>Compétences</b></p>
         <hr>
         <p>HTML/CSS</p><img src="./Imagesiteweb/point noir.png" alt="https://ibb.co/tJD0KN3"> <img
@@ -195,9 +199,10 @@
 
 </div>
 
+
 <footer>
     <div class="footer">
-     <div class="linkedin"><img src="./Imagesiteweb/logo-linkedin.png" alt="" class="image" id="linkedin"></div>
+        <div class="linkedin"><img src="./Imagesiteweb/logo-linkedin.png" alt="" class="image" id="linkedin"></div>
     </div>
     <script src="stylejs.js"></script>
 </footer>
